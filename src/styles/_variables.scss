@@ -13,6 +13,7 @@ $font-roboto-light: 'Roboto Light', sans-serif;
 
 /* Tamaños */
 $tamaño-iconos: 1.25rem;
+$tamaño-iconos-sm: 0.75rem;
 $font-size-h1: 68px;
 $font-size-h2: 40px;
 $font-size-h3: 32px;
@@ -22,11 +23,19 @@ $font-weight-h: 700;
 $width-container: 90%;
 $padding-container: 1rem  2rem;
 $width-img-desktop: 200px;
+$width-img-tablet:150px;
 $width-img-mobile: 150px;
 $height-img-desktop: 150px;
+$height-img-tablet: 150px;
 $height-img-mobile: 150px;
 
+$font-size-small: 12px;
+$font-size-medium: 16px;
+$font-size-large: 24px; 
 
+$max-width-small: 599px; 
+$max-width-medium: 1199px; 
+$max-width-large: 1440px; 
 $padding-a-header: 1rem 2rem;
 
 $border-radius: 10px;
@@ -35,4 +44,8 @@ $border-radius: 10px;
 
 
 
-
+$breakpoints: (
+  "small": "(max-width: 599px)",  
+  "medium": "(min-width: 600px) and (max-width: 1199px)",   
+  "large": "(min-width: 1200px)"
+);
