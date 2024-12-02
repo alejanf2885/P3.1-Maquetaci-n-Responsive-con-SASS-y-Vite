@@ -53,7 +53,7 @@ main {
       }
 
       button {
-        @include button($color-principal1, $color-principal2, $color-secundario); // Usar el color principal por defecto
+        @include button($color-principal1, $color-principal2, $color-secundario); 
         margin-top: 1rem;
       }
     }
@@ -70,7 +70,7 @@ main {
       }
 
       button {
-        @include button($color-secundario, $color-principal2, $color-principal1); // Cambiar el borde a blanco
+        @include button($color-secundario, $color-principal2, $color-principal1);
         border: 1px solid $color-secundario;
         font-size: $font-size-medium;
       }
@@ -106,7 +106,7 @@ main {
       }
 
       button {
-        @include button($color-principal1, $color-principal2, $color-secundario); // Usar el color principal por defecto
+        @include button($color-principal1, $color-principal2, $color-secundario);
         font-size: $font-size-large;
       }
     }
