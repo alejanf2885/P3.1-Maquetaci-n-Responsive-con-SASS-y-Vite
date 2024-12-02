@@ -2,6 +2,7 @@
 @use "mixins" as *;
 
 footer {
+  border-top: 1px solid $color-principal1;
   .container {
     display: flex;
     justify-content: space-around;
@@ -10,6 +11,7 @@ footer {
     max-width: $width-container;
     margin: 0 auto;
     padding: $padding-container;
+    
   
     .footer-section {
       text-align: center;
@@ -29,7 +31,7 @@ footer {
 
       h2 {
         color: $color-principal1;
-        font-size: $font-size-h2;
+        font-size: $font-size-h3;
         font-weight: $font-weight-h;
         margin-bottom: 1rem;
       }
@@ -56,7 +58,7 @@ footer {
     }
 
     h2 {
-      font-size: $font-size-h4;
+      font-size: $font-size-h5;
     }
 
     p {
@@ -78,11 +80,11 @@ footer {
     }
 
     h2 {
-      font-size: $font-size-h3; 
+      font-size: $font-size-h5; 
     }
 
     p {
-      font-size: $font-size-h4;
+      font-size: $font-size-h5;
     }
   }
 
@@ -97,7 +99,7 @@ footer {
     }
 
     h2 {
-      font-size: $font-size-h2; 
+      font-size: $font-size-h4; 
     }
 
     p {

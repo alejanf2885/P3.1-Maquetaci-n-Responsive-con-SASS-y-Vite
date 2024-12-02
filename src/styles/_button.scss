@@ -1,0 +1,34 @@
+@use "variables" as *;
+
+@mixin button($border-color: $color-principal1, $hover-bg-color: $color-principal2, $hover-text-color: $color-secundario) {
+  position: relative;
+  background-color: transparent;
+  color: $color-principal1;
+  padding: 10px 20px;
+  border: 1px solid $border-color;
+  cursor: pointer;
+  font-size: 16px;
+  overflow: hidden; // Asegura que el contenido no se desborde
+  transition: color 0.3s;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $hover-bg-color;
+    transform: translateX(-100%); // Iniciar fuera del botón a la izquierda
+    transition: transform 0.3s;
+    z-index: -1; // Asegura que el pseudo-elemento esté detrás del texto
+  }
+
+  &:hover {
+    color: $hover-text-color; // Cambia el color del texto al pasar el cursor
+
+    &::before {
+      transform: translateX(0); // Mueve el pseudo-elemento para rellenar el botón
+    }
+  }
+}
