@@ -43,7 +43,7 @@
 ## Instalación
 
 1. Clona este repositorio en tu máquina local:
-   git clone https://github.com/tuusuario/motorfactory.git
+   git clone https://github.com/tuusuario/motorfactory.git](https://github.com/alejanf2885/P3.1-Maquetaci-n-Responsive-con-SASS-y-Vite.git
 
 > [!important]
 > Hecho por Alejandro Navarro Fernández
