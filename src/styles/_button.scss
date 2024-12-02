@@ -8,7 +8,7 @@
   border: 1px solid $border-color;
   cursor: pointer;
   font-size: 16px;
-  overflow: hidden; // Asegura que el contenido no se desborde
+  overflow: hidden; 
   transition: color 0.3s;
 
   &::before {
@@ -19,16 +19,16 @@
     bottom: 0;
     left: 0;
     background-color: $hover-bg-color;
-    transform: translateX(-100%); // Iniciar fuera del botón a la izquierda
+    transform: translateX(-100%); 
     transition: transform 0.3s;
-    z-index: -1; // Asegura que el pseudo-elemento esté detrás del texto
+    z-index: -1; 
   }
 
   &:hover {
-    color: $hover-text-color; // Cambia el color del texto al pasar el cursor
+    color: $hover-text-color; 
+  }
 
     &::before {
-      transform: translateX(0); // Mueve el pseudo-elemento para rellenar el botón
-    }
+      transform: translateX(0);
   }
 }
